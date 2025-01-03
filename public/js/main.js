@@ -52,3 +52,9 @@ function showError(message) {
 
 // Initialisation
 document.addEventListener('DOMContentLoaded', fetchLatestNews);
+// Lorsque le bouton "Articles" est cliqué, afficher les options dynamiques
+document.getElementById('articlesBtn').addEventListener('click', function() {
+    const options = document.getElementById('dynamicOptions');
+    options.style.display = options.style.display === 'block' ? 'none' : 'block';
+  });
+  

@@ -1,88 +1,87 @@
-/* Modifier la couleur de fond du body */
-body {
-    background-color: #f8f9fa; /* Couleur de fond claire */
-    font-family: 'Arial', sans-serif; /* Police personnalisée */
-}
+/* Navbar */
+.navbar {
+    background-color: #343a40; /* Couleur gris foncé */
+  }
 
-/* Modifier les titres */
-h1, h2 {
-    color: #2c3e50; /* Couleur des titres */
+  /* Design du logo NewApp */
+  .navbar-brand {
+    font-family: 'Arial', sans-serif; /* Choisissez une police qui vous plaît */
+    font-size: 32px; /* Taille de la police */
     font-weight: bold;
-}
+    background: linear-gradient(to right, #007bff, #00bcd4); /* Dégradé de couleurs */
+    -webkit-background-clip: text; /* Applique le dégradé au texte */
+    color: transparent; /* Le texte devient transparent, laissant apparaître le dégradé */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Ombre du texte pour le rendre plus visible */
+    letter-spacing: 1px; /* Espacement des lettres */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
 
-/* Modifier les boutons */
-.btn-primary {
-    background-color: #007bff; /* Bleu plus clair pour le bouton */
-    border: none;
-}
+  /* Effet au survol */
+  .navbar-brand:hover {
+    transform: scale(1.1); /* Légère augmentation de la taille au survol */
+    color: white; /* Change la couleur au survol */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8); /* Ombre plus marquée au survol */
+  }
 
-.btn-primary:hover {
-    background-color: #0056b3; /* Couleur au survol */
-}
-/* Modifier les cartes */
-.card {
-    border-radius: 10px; /* Bordure arrondie pour les cartes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
-}
+  /* Navbar */
+  .navbar .nav-link,
+  .navbar .btn {
+    color: white;
+  }
+  .navbar .nav-link:hover,
+  .navbar .btn:hover {
+    color: #d1d1d1;
+  }
 
-.card-img-top {
-    border-radius: 10px 10px 0 0; /* Bordure arrondie sur l'image */
-}
-/* Espacement autour du conteneur principal */
-.container {
-    margin-top: 50px;
-}
-
-/* Espacement entre les cartes */
-.card-body {
-    padding: 20px;
-}
-
-/* Espacement entre les sections */
-section {
-    margin-bottom: 40px;
-}
-/* Personnaliser les messages d'erreur */
-.alert-danger {
-    font-size: 16px;
-    font-weight: bold;
+  /* Style des options dynamiques "Créer" et "Visiter" */
+  .dynamic-options {
+    display: none;
+    margin-top: 5px;
+    background-color: #f8f9fa; /* Gris clair */
+    padding: 5px; /* Réduit le padding */
     border-radius: 5px;
-}
-/* Ajouter une transition douce sur les cartes */
-.card {
-    transition: transform 0.3s ease;
-}
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 120px; /* Taille plus petite */
+  }
 
-.card:hover {
-    transform: scale(1.05); /* Effet d'agrandissement au survol */
-}
-/* Media query pour les petits écrans */
-@media (max-width: 767px) {
-    .card {
-        margin-bottom: 20px;
-    }
+  .dynamic-options a {
+    display: block;
+    padding: 5px; /* Réduit le padding des liens */
+    color: #343a40; /* Gris foncé */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px; /* Réduit la taille de la police */
+    transition: background-color 0.3s ease;
+  }
 
-    .container {
-        margin-top: 20px;
-    }
-}
+  .dynamic-options a:hover {
+    background-color: #e9ecef; /* Gris clair au survol */
+  }
 
-/* Media query pour les écrans moyens (tablettes) */
-@media (max-width: 1024px) {
-    .card {
-        margin-bottom: 30px;
-    }
-}
-/* Modifier les liens */
-a {
-    color: #007bff;
-}
+  /* Symbole caret pour le menu déroulant */
+  .dropdown-toggle::after {
+    content: "\25BC"; /* Icône caret (flèche vers le bas) */
+    font-size: 0.5em; /* Taille réduite de la flèche */
+    margin-left: 5px; /* Espace réduit entre le texte et la flèche */
+  }
 
-a:hover {
-    color: #0056b3;
-}
+  /* Carousel */
+  .carousel-item img {
+    width: 100%;
+    height: 400px; /* Hauteur ajustée */
+    object-fit: cover;
+  }
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    
+    border-radius: 5px;
+  }
 
-/* Image avec une bordure circulaire */
-img {
-    border-radius: 50%;
-}
+  /* Cards */
+  .card {
+    width: 18rem;
+    margin: 10px;
+  }
