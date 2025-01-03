@@ -13,6 +13,10 @@ async function fetchLatestNews() {
     }
 }
 
+
+  
+
+
 // TODO: Question 1 - Compléter la fonction displayNews
 function displayNews(news) {
     const container = document.getElementById('news-container');
@@ -41,6 +45,16 @@ function displayNews(news) {
         container.innerHTML += articleDiv; // Ajouter chaque carte à la page
     });
 }
+// Initialisation
+document.addEventListener('DOMContentLoaded', fetchLatestNews);
+// Lorsque le bouton "Articles" est cliqué, afficher les options dynamiques
+document.getElementById('articlesBtn').addEventListener('click', function() {
+    const options = document.getElementById('dynamicOptions');
+    options.style.display = options.style.display === 'block' ? 'none' : 'block';
+  })
+
+  
+
 
 
 // TODO: Question 2 - Créer une fonction pour gérer les erreurs
@@ -50,11 +64,3 @@ function showError(message) {
     errorDiv.innerHTML = `<div class="alert alert-danger">${message}</div>`;
 }
 
-// Initialisation
-document.addEventListener('DOMContentLoaded', fetchLatestNews);
-// Lorsque le bouton "Articles" est cliqué, afficher les options dynamiques
-document.getElementById('articlesBtn').addEventListener('click', function() {
-    const options = document.getElementById('dynamicOptions');
-    options.style.display = options.style.display === 'block' ? 'none' : 'block';
-  });
-  

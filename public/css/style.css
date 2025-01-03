@@ -36,12 +36,14 @@
   /* Style des options dynamiques "Créer" et "Visiter" */
   .dynamic-options {
     display: none;
-    margin-top: 5px;
-    background-color: #f8f9fa; /* Gris clair */
-    padding: 5px; /* Réduit le padding */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 120px; /* Taille plus petite */
+    margin-top: 10px;
+    background-color: #d8dbdd; /* Gris clair */
+    padding: 15px; /* Réduit le padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Taille plus petite */
+    height: auto;
+    
   }
 
   .dynamic-options a {
@@ -53,11 +55,16 @@
     font-weight: bold;
     font-size: 14px; /* Réduit la taille de la police */
     transition: background-color 0.3s ease;
+    text-decoration: underline; 
   }
+  
 
   .dynamic-options a:hover {
     background-color: #e9ecef; /* Gris clair au survol */
-  }
+    text-decoration: underline; /* Ajouter le soulignement au survol */
+   
+}
+
 
   /* Symbole caret pour le menu déroulant */
   .dropdown-toggle::after {
