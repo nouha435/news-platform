@@ -92,3 +92,51 @@
     width: 18rem;
     margin: 10px;
   }
+  .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+/* Pied de page */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  font-size: 0.9rem;
+  border-top: 3px solid #007bff;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Barre de recherche */
+#searchInput {
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+/* Message "Aucun article trouvé" */
+#noResults {
+  font-size: 1.2rem;
+}
+
+#success-message {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+}
+
+#error-message {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}

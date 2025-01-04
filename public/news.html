@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Articles</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">NewsApp</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Retour à l'accueil</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h1 class="display-4 text-primary">Articles Récents</h1>
+                <p class="lead text-muted">Recherchez un article ou découvrez les dernières actualités.</p>
+            </div>
+            <!-- Barre de recherche -->
+            <div class="mb-4">
+                <input type="text" id="searchInput" class="form-control" placeholder="Rechercher un article..." onkeyup="searchArticles()">
+            </div>
+            <!-- Articles Section -->
+            <div class="row" id="articles">
+                <!-- Articles dynamiques ajoutés ici -->
+            </div>
+             <!-- Section pour afficher l'article complet -->
+  <div id="full-article" style="display: none;">
+    <div class="container my-5">
+      <h1 id="full-article-title"></h1>
+      <img id="full-article-image" class="img-fluid mb-4" src="" alt="">
+      <p id="full-article-content"></p>
+      <a href="#" class="btn btn-primary" onclick="closeArticle()">Retour</a>
+    </div>
+  </div>
+            <!-- Message Aucun article trouvé -->
+            <div id="noResults" class="text-center text-danger mt-4" style="display: none;">
+                <p>Aucun article trouvé.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 NewsApp. Tous droits réservés.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>
+
+

@@ -24,17 +24,27 @@
   </nav>
 
   <!-- Formulaire de création d'article -->
+  
+  
+  <!-- Formulaire de création d'article -->
   <div class="container my-5">
     <h1>Créer un Nouvel Article</h1>
-    <form action="#" method="POST">
+    <form id="create-article-form">
       <div class="form-group">
         <label for="title">Titre de l'article</label>
-        <input type="text" class="form-control" id="title" placeholder="Entrez le titre de l'article">
+        <input type="text" class="form-control" id="article-title" placeholder="Entrez le titre de l'article">
       </div>
       <div class="form-group">
         <label for="content">Contenu de l'article</label>
-        <textarea class="form-control" id="content" rows="5" placeholder="Entrez le contenu de l'article"></textarea>
+        <textarea class="form-control" id="article-content" rows="5" placeholder="Entrez le contenu de l'article"></textarea>
       </div>
+
+      <!-- Message d'erreur -->
+      <div id="error-message" class="alert alert-danger mt-3" style="display: none;"></div>
+
+      <!-- Message de succès -->
+      <div id="success-message" class="alert alert-success mt-3" style="display: none;"></div>
+
       <button type="submit" class="btn btn-primary">Créer l'article</button>
     </form>
   </div>
