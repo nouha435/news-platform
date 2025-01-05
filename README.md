@@ -1,5 +1,5 @@
 # Application de News - TP Technologies Web
-# Par [Votre Nom et prénom]
+# Par [Nouhaila Maarouf ]
 
 ## Description
 Cette application permet de :
