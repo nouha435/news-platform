@@ -15,6 +15,12 @@ app.use('/api/news', newsRoutes);
 
 // TODO: Question 3 - Ajouter un middleware pour gérer les erreurs
 
+app.use((err, req, res, next) => {
+  console.error(err.stack); // Affiche l'erreur dans la console
+  res.status(err.status || 500).json({
+    message: err.message || 'Une erreur s\'est produite sur le serveur.',
+  });
+});
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
